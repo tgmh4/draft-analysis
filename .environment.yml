@@ -1,0 +1,12 @@
+name: dota-dashboard
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - streamlit
+      - requests
+      - pandas
+      - seaborn
+      - matplotlib
