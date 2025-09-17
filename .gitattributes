@@ -1,0 +1,11 @@
+# Ensure consistent line endings
+* text=auto
+
+# Treat Jupyter notebooks as text but ignore outputs for diffs
+*.ipynb diff=ipynb
+
+# Large binary files (images, etc.)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary

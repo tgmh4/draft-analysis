@@ -1,75 +1,64 @@
-# Dota 2 Match Dashboard
+# Dota Draft Dashboard
 
-A Python + [Streamlit](https://streamlit.io/) dashboard for analyzing Dota 2 matches.  
-It visualizes draft phases, team composition balance, and game progress.
-
----
+This repository contains a Streamlit dashboard and supporting exploration notebooks for analyzing Dota 2 drafts and match data. The dashboard visualizes the pick/ban phase, player stats, team advantage graphs, and role coverage heatmaps. The `/exploration` folder includes Jupyter notebooks for feature engineering and data discovery.
 
 ## Features
-
-- **Pick/Ban Phase**
-  - Visual timeline of picks and bans (Radiant and Dire).
-  - Hero portraits with numbered order (picks in color, bans grayed out).
-  - Draft timings (seconds taken) displayed below each portrait.
-
-- **Team Advantage Graph**
-  - Line chart of Radiant XP and Gold advantage over time.
-  - Minute markers every 3 minutes.
-  - Highlighted zero-line to show lead changes.
-
-- **Role Coverage Heatmap**
-  - Counts of role categories (e.g., Carry, Disabler, Nuker) per team.
-  - Toggle between:
-    - Separate Radiant/Dire heatmaps.
-    - Overlap comparison in one chart.
-
----
+- **Pick/Ban Visualization**:
+  - Chronological Radiant/Dire pick/ban rows.
+  - Hero portraits with grayscale bans and order numbering.
+  - Draft timing labels for each action.
+- **Player Stats Table**:
+  - Hero portrait with level overlay.
+  - Lane + player fields with KDA, GPM, XPM, and net worth.
+  - Radiant and Dire tables with team total rows.
+- **Team Advantage Graph**:
+  - XP and Gold advantage plotted over time.
+  - Radiant/Dire advantage labeled clearly.
+- **Role Coverage Heatmap**:
+  - Radiant and Dire role distributions with toggle for overlap.
+  - Dark theme with team-colored highlights.
+- **Exploration Support**:
+  - `/exploration/json_preview.ipynb` for df.head()-style JSON previews.
 
 ## Dataset
-
-The dashboard fetches live match data from the [OpenDota API](https://docs.opendota.com/).
-
-Endpoints used:
-- [`/api/matches/{match_id}`](https://docs.opendota.com/#tag/matches/GET/api-matches-match_id) – match details, picks/bans, and gold/xp advantage.  
-- [`/api/heroes`](https://docs.opendota.com/#tag/heroes/GET/api-heroes) – hero metadata including roles and attributes.
-
----
+The dashboard uses match JSONs from the [OpenDota API](https://docs.opendota.com/).  
+Example endpoints:
+- `https://api.opendota.com/api/matches/{match_id}`
+- `https://api.opendota.com/api/heroes`
+- `https://api.opendota.com/api/heroStats`
 
 ## Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/tgmh4/draft-analysis.git
+   cd draft-analysis
+   ```
 
-1. **Create environment**
-```bash
-   conda create -n dota-dashboard python=3.11
-   conda activate dota-dashboard
+2. Create environment:
 ```
-or
-```
-python -m venv venv
-source venv/bin/activate
+conda env create -f environment.yml
+conda activate dota-dashboard
 ```
 
-2. **Install dependencies**
+3. Install dependencies (if not using conda):
 ```
 pip install -r requirements.txt
 ```
 
-## Usage
-
+**Usage**
 1. Run the dashboard:
 ```
 streamlit run app.py
 ```
 
-2.	Enter a match ID in the input field (e.g., 8448961923).
-3.	Explore:
-	•	Pick/Ban phase visualization.
-	•	XP/Gold advantage over time.
-	•	Role coverage heatmaps.
+2. Enter match ID into the search field.
+3.	Explore the draft phase, player stats, advantage graphs, and heatmaps.
+4.	Open /exploration notebooks in VS Code or Jupyter to dive deeper into JSON fields and feature engineering.
 
-## Future Enhancements
-- Group draft into Ban/Pick phases (like Dotabuff).
-- Add attribute and attack-type breakdowns (STR/AGI/INT, melee/ranged).
-- Place advantage graph and heatmap side by side under the draft.
-- Modularize code into components (`hero_tile.py`, `charts/advantage.py`, etc.).
-- Add hide/show toggles for each section (draft, graphs, heatmaps).
-- Introduce synergy and counter heatmaps between Radiant and Dire heroes.
+**Future Enhancements**
+	•	Group draft into Ban/Pick phases (Dotabuff-style).
+	•	Add attribute and attack-type breakdowns (STR/AGI/INT, melee/ranged).
+	•	Compare match-level stats vs global benchmarks.
+	•	Tournament-level scraping (league ID → all matches).
+	•	ML models for draft prediction (sequence modeling).
+	•	Downloadable match CSVs for external analysis.

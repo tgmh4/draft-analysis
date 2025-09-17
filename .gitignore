@@ -1,32 +1,42 @@
-# Byte-compiled / optimized / DLL files
+---
+
+## 📄 `.gitignore`
+
+```gitignore
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
+*.so
 
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-
-# Virtual environments
-venv/
-.venv/
-env/
+# Environments
+.env
+.venv
 *.env
+*.venv
+.ipynb_checkpoints
+.envrc
 
-# Conda environment
-*.conda
-*.yml.lock
-
-# Streamlit
-.streamlit/
-
-# Jupyter Notebook checkpoints
+# Jupyter
 .ipynb_checkpoints/
-
-# System files
-.DS_Store
-Thumbs.db
+*.ipynb_checkpoints
+*.ipynb_save/
 
 # Logs
 *.log
+*.out
+*.err
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+.vscode-test/
+
+# Data
+*.csv
+*.json
+*.parquet
