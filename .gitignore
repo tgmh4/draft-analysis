@@ -1,8 +1,3 @@
----
-
-## 📄 `.gitignore`
-
-```gitignore
 # Python
 __pycache__/
 *.py[cod]
@@ -10,12 +5,11 @@ __pycache__/
 *.pyd
 *.so
 
-# Environments
+# Virtual environments
 .env
 .venv
 *.env
 *.venv
-.ipynb_checkpoints
 .envrc
 
 # Jupyter
@@ -36,7 +30,8 @@ Thumbs.db
 .vscode/
 .vscode-test/
 
-# Data
+# Data artifacts (keep raw JSONs optional for reproducibility)
 *.csv
-*.json
 *.parquet
+*.feather
+!data/*.json   # allow committed sample match JSONs

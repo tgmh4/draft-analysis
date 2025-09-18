@@ -1,151 +1,55 @@
-accelerate==0.27.2
-aiohttp==3.9.3
-aiosignal==1.3.1
-altair==5.5.0
-anyio==4.10.0
-appnope==0.1.4
-argon2-cffi==25.1.0
-argon2-cffi-bindings==25.1.0
-arrow==1.3.0
-asttokens==3.0.0
-async-lru==2.0.5
-attrs==23.2.0
-babel==2.17.0
-beautifulsoup4==4.13.5
-bleach==6.2.0
-blinker==1.9.0
-cachetools==6.2.0
-certifi==2024.2.2
-cffi==1.17.1
-charset-normalizer==3.3.2
-click==8.1.7
-comm==0.2.3
-contourpy==1.3.3
-cycler==0.12.1
-datasets==2.17.1
-debugpy==1.8.16
-decorator==5.2.1
+asgiref==3.7.2
+beautifulsoup4 @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-15cbtalq/beautifulsoup4_1650462161715/work
+boltons @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f63n9uulmp/croot/boltons_1677628710094/work
+brotlipy==0.7.0
+certifi @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_5c4sjwommo/croot/certifi_1683875376620/work/certifi
+cffi @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ab19r4bji3/croot/cffi_1670423206034/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+conda @ file:///private/var/folders/k1/30mswbxs7r1g6zwn8y4fyt500000gp/T/abs_0cwmmds6q9/croot/conda_1689269929143/work
+conda-package-handling @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_57h_oo3f_8/croot/conda-package-handling_1685024802254/work
+conda_package_streaming @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_4fwljxujl7/croot/conda-package-streaming_1685019683894/work
+cryptography @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_4a_lrlt_rt/croot/cryptography_1686613068564/work
 defusedxml==0.7.1
-dill==0.3.8
-executing==2.2.1
-fastjsonschema==2.21.2
+distlib==0.3.7
+Django==4.2.7
+django-templated-mail==1.1.1
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.1
+djangorestframework-xml==2.0.0
+djoser==2.2.2
 filelock==3.13.1
-fonttools==4.59.2
-fqdn==1.5.1
-frozenlist==1.4.1
-fsspec==2023.10.0
-gitdb==4.0.12
-GitPython==3.1.45
-h11==0.16.0
-httpcore==1.0.9
-httpx==0.28.1
-huggingface-hub==0.20.3
-idna==3.6
-ipykernel==6.30.1
-ipython==9.5.0
-ipython_pygments_lexers==1.1.1
-isoduration==20.11.0
-jedi==0.19.2
-Jinja2==3.1.3
-joblib==1.3.2
-json5==0.12.1
-jsonpointer==3.0.0
-jsonschema==4.25.1
-jsonschema-specifications==2025.9.1
-jupyter-events==0.12.0
-jupyter-lsp==2.3.0
-jupyter_client==8.6.3
-jupyter_core==5.8.1
-jupyter_server==2.17.0
-jupyter_server_terminals==0.5.3
-jupyterlab==4.4.7
-jupyterlab_pygments==0.3.0
-jupyterlab_server==2.27.3
-kiwisolver==1.4.9
-lark==1.2.2
-MarkupSafe==2.1.5
-matplotlib==3.10.6
-matplotlib-inline==0.1.7
-mistune==3.1.4
-mpmath==1.3.0
-multidict==6.0.5
-multiprocess==0.70.16
-narwhals==2.3.0
-nbclient==0.10.2
-nbconvert==7.16.6
-nbformat==5.10.4
-nest-asyncio==1.6.0
-networkx==3.2.1
-notebook==7.4.5
-notebook_shim==0.2.4
-numpy==1.26.4
-overrides==7.7.0
-packaging==23.2
-pandas==2.2.0
-pandocfilters==1.5.1
-parso==0.8.5
-pexpect==4.9.0
-pillow==11.3.0
-platformdirs==4.4.0
-plotly==6.3.0
-prometheus_client==0.22.1
-prompt_toolkit==3.0.52
-protobuf==6.32.0
-psutil==5.9.8
-ptyprocess==0.7.0
-pure_eval==0.2.3
-pyarrow==15.0.0
-pyarrow-hotfix==0.6
-pycparser==2.22
-pydeck==0.9.1
-Pygments==2.19.2
-pyparsing==3.2.3
-python-dateutil==2.8.2
-python-json-logger==3.3.0
-pytz==2024.1
-PyYAML==6.0.1
-pyzmq==27.1.0
-referencing==0.36.2
-regex==2023.12.25
-requests==2.31.0
-rfc3339-validator==0.1.4
-rfc3986-validator==0.1.1
-rfc3987-syntax==1.1.0
-rpds-py==0.27.1
-sacremoses==0.1.1
-safetensors==0.4.2
-scikit-learn==1.7.1
-scipy==1.16.1
-seaborn==0.13.2
-Send2Trash==1.8.3
-sentencepiece==0.2.0
-six==1.16.0
-smmap==5.0.2
-sniffio==1.3.1
-soundfile==0.13.1
-soupsieve==2.8
-stack-data==0.6.3
-streamlit==1.49.1
-sympy==1.12
-tenacity==9.1.2
-terminado==0.18.1
-threadpoolctl==3.6.0
-tinycss2==1.4.0
-tokenizers==0.15.2
-toml==0.10.2
-torch==2.2.0
-tornado==6.5.2
-tqdm==4.66.2
-traitlets==5.14.3
-transformers==4.37.2
-types-python-dateutil==2.9.0.20250822
-typing_extensions==4.15.0
-tzdata==2024.1
-uri-template==1.3.0
-urllib3==2.2.1
-wcwidth==0.2.13
-webcolors==24.11.1
-webencodings==0.5.1
-websocket-client==1.8.0
-xxhash==3.4.1
-yarl==1.9.4
+idna @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_771olrhiqw/croot/idna_1666125579282/work
+jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
+jsonpointer==2.1
+mysqlclient==2.2.1
+numpy==1.23.5
+oauthlib==3.2.2
+packaging @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e946luvhc3/croot/packaging_1678965323926/work
+Pillow==9.3.0
+pipenv==2023.11.15
+platformdirs==4.0.0
+pluggy @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_croot-w6jyveby/pluggy_1648109277227/work
+psutil==7.0.0
+pycosat @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e9xhel3kyj/croot/pycosat_1666805516297/work
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+PyJWT==2.8.0
+pyOpenSSL @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_38h4axtq38/croot/pyopenssl_1677607699670/work
+PySocks @ file:///Users/ktietz/ci_310/pysocks_1643961536721/work
+python3-openid==3.2.0
+pytz==2023.3.post1
+requests @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_37wt8ycste/croot/requests_1682607533309/work
+requests-oauthlib==1.3.1
+ruamel.yaml @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_aeh5mqcw49/croot/ruamel.yaml_1666304555976/work
+ruamel.yaml.clib @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_f64xdg2rww/croot/ruamel.yaml.clib_1666302244208/work
+social-auth-app-django==5.4.0
+social-auth-core==4.5.1
+soupsieve @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_cfrx9hmp3g/croot/soupsieve_1680518480034/work
+sqlparse==0.4.4
+tkinterdnd2==0.3.0
+toolz @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_362wyqvvgy/croot/toolz_1667464079070/work
+torch==1.13.0
+tqdm @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_ac7zic_tin/croot/tqdm_1679561870178/work
+typing_extensions==4.4.0
+urllib3 @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_e9usuw__8i/croot/urllib3_1686166332689/work
+virtualenv==20.25.0
+zstandard @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_41b3vxtask/croot/zstandard_1677013668452/work

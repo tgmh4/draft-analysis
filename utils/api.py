@@ -10,3 +10,6 @@ def get_match_data(match_id):
 def get_hero_stats():
     url = "https://api.opendota.com/api/heroes"
     return {hero['id']: hero for hero in requests.get(url).json()}
+
+
+# url = "https://api.opendota.com/api/herostats"

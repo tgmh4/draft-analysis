@@ -1,7 +1,7 @@
 name: dota-dashboard
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   # Core
   - python=3.11
@@ -12,7 +12,7 @@ dependencies:
   - numpy
   - requests
 
-  # Visualization
+  # Visualization & Dashboard
   - matplotlib
   - seaborn
   - streamlit
@@ -22,7 +22,11 @@ dependencies:
   - jupyterlab
   - ipykernel
 
-  # Optional: nice-to-haves
-  - scikit-learn   # ML prototyping
+  # ML / Stats (optional, for pick/ban modeling later)
+  - scikit-learn
+  - statsmodels
+
+  # Pip installs
   - pip:
       - streamlit-option-menu   # optional UI enhancement
+      - plotly                  # interactive charts

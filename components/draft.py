@@ -25,7 +25,7 @@ def render_draft(picks_bans, hero_stats, draft_timings):
         radiant_html += hero_tile(img_url, order=pb["order"], label=label, is_pick=pb["is_pick"])
     radiant_html += "</div>"
 
-    st.components.v1.html(radiant_html, height=130, scrolling=False)
+    st.components.v1.html(radiant_html, height=130, scrolling=True)
 
     # Dire row
     dire_html = "<div style='background:#601010;padding:8px;display:flex;gap:8px;flex-wrap:wrap;'>"
@@ -40,4 +40,4 @@ def render_draft(picks_bans, hero_stats, draft_timings):
         dire_html += hero_tile(img_url, order=pb["order"], label=label, is_pick=pb["is_pick"])
     dire_html += "</div>"
 
-    st.components.v1.html(dire_html, height=130, scrolling=False)
+    st.components.v1.html(dire_html, height=130, scrolling=True)
