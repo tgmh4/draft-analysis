@@ -1,0 +1,29 @@
+name: dota-dashboard
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  - matplotlib
+  - seaborn
+  - statsmodels
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - altair
+  - pydeck
+  - pip:
+      - streamlit
+      - streamlit-option-menu
+      - tqdm
+      - requests
+      - pyyaml
+      - torch
+      - torchvision
+      - torchaudio
+      - xgboost
+      - lightgbm
